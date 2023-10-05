@@ -1,0 +1,146 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #header {
+    display: flex;
+    background-color: blue
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  /*
+  @media only screen and (max-width:600px){
+  #nav-bar ul {
+    display: flex;
+  }
+  
+  #nav-bar ul li {
+    padding: 1rem 2rem;
+  }
+  
+  #nav-bar ul li a {
+    color: #333;
+    font-size: 1.2rem;
+  }     } */
+  
+  /* UTILITY CLASSES */
+  #container {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.4rem 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f1c40f;
+  }
+  
+  .message-box {
+    margin: 1.5rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+  .message-box h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .message-box input {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* FOOTER */
+  #main-footer {
+    background-color: #ccc;
+    padding: 1rem 4rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  #main-footer div a {
+    color: #333;
+    padding: 0.5rem 1rem;
+  }
+  
+  #fcs {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  /* TABLET AND SMARTPHONE */
+  @media only screen and (max-width: 800px) {
+    #navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 0.3rem;
+    }
+  
+    #navbar ul li {
+      padding: 1rem 1rem;
+    }
+  
+    #features .feature {
+      flex-direction: column;
+    }
+  
+    #features .feature div {
+      padding: 1rem;
+      margin: 0.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    #main-footer {
+      padding: 2.5rem 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #main-footer .my-name {
+      margin: 1rem 0;
+    }
+  }

@@ -1,0 +1,10 @@
+Flask
+pandas
+numpy
+yfinance
+tensorflow
+keras
+plotly
+pandas-datareader
+tqdm
+scikit-learn

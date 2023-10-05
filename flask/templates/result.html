@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Forecast Result</title>
+    <!-- Include Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Stock Forecast Result</h1>
+    
+    <div id="plotly-graph"></div>
+    
+    <script>
+        var plotlyData = {{ fig | safe }};
+        Plotly.newPlot('plotly-graph', plotlyData.data, plotlyData.layout);
+    </script>
+</body>
+</html>

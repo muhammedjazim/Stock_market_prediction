@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/static/styles.css">
+        <title>Predictio</title>
+      </head>
+<body>
+    <header id="header">
+        <div id="nav-bar">
+          <h1>Predictio</h1>
+        </div>
+    </header>
+    <div id="container">
+        <section class="message-box">
+          <div>
+            <h3>Predictions can be inaccurate. Make investment decisions at your own risk</h3>
+            <h3>It may take upto even an hour to generate predictions. Be patient</h3>
+          </div>
+          <div>
+            <form id="form" method = "POST">
+            <label for="stock_symbol">Enter Stock Symbol listed as per in BSE:</label>
+            <input type="text" id="stock_symbol" name="stock_symbol" required>
+            <input id="submit" type="submit" value="Make Predictions" class="btn"></input>
+            </form>
+          </div>
+        </section>
+    
+        
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <p class="my-name">Do your own analysis while trading or investing in the market. The market is highly volatile. Proceed at your own risk</p>
+    </footer>
+</body>
+</html>
+
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
