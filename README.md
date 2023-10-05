@@ -3,5 +3,7 @@ I made a Deep Learning LSTM model to predict prices of  future stocks listed in 
 
 #### How to run this application ? 
 Do these steps on your terminal after cloning this repository
+
  step 1 : `pip install -r requirements.txt`
+
  step 2 : `python app.py`
